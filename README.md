@@ -34,7 +34,7 @@ The Express app should be located in the path `server/app.js` and export the `ap
 - The app title should be `Tickets Manager` with a custom [favicon](https://en.wikipedia.org/wiki/Favicon). You can create one [here](https://favicon.io/)
 - The app should load (from backend) and show all Tickets.
 - The Ticket component should have className `ticket` and should match this appearance: ![ticketcomponent](./readme-files/ticketcomponent.png)
-- App ticket data (received from the server) might contain `label` property (an array of strings). add those tags to the UI using elements having the `lable` class. Use the following style as an example: ![tags](./readme-files/tags.png)
+- App ticket data (received from the server) might contain `label` property (an array of strings). add those tags to the UI using elements having the `label` class. Use the following style as an example: ![tags](./readme-files/tags.png)
 PS: feel free to add more label strings to the data (`data.json`) if you need.
 - The app should have input with id `searchInput`. This input should request the server on `onChange` with relevant `searchText` param and update the list accordingly
 - Add a hide button with className `hideTicketButton` that will hide the tickets from view. Add a counter of number of hiding tickets, this counter should have a `hideTicketsCounter` className.
