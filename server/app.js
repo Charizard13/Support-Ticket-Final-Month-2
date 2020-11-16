@@ -2,6 +2,13 @@ const express = require('express');
 
 const app = express();
 const fs = require('fs').promises;
+const path = require('path')
+app.use(express.static(path.join(__dirname, '../client/build')))
+
+
+app.get('/' ,  async(req,res) => {
+res.sendFile(path.join(__dirname, '../client/build', "index.html"))
+})
 
 app.get('/api/tickets', async (req, res) => {
   const content = await fs.readFile('./data.json');
